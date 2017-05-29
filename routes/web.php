@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('user/login', 'UserController@login');
+Route::post('stu/apply', 'StuController@stuApply');
+Route::post('stu/list', 'StuController@getStuList');
